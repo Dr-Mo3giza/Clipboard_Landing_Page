@@ -1,0 +1,292 @@
+/* Start Variables */
+:root {
+  --s-cyan: hsl(171, 66%, 44%);
+  --l-blue: hsl(233, 100%, 69%);
+  --d-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+}
+
+/* End Variables */
+/* Start Global Rules */
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+/* End Global Rules */
+/* Start Desktop Design */
+.page {
+  position: relative;
+  height: 555vh;
+}
+
+.page .container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 110px 0;
+}
+
+/* Start Landing Section */
+.page .container .landing {
+  width: max-content;
+  margin: 0 auto;
+}
+
+.page .container .landing .logo {
+  margin-bottom: 50px;
+}
+
+.page .container .landing .text>h1 {
+  font-size: 46px;
+  color: var(--d-grayish-blue);
+}
+
+.page .container .landing .text>p {
+  width: 715px;
+  font-size: 21px;
+  line-height: 1.4;
+  color: var(--grayish-blue);
+  margin-top: 16px;
+}
+
+.page .container .download {
+  margin-top: 60px;
+}
+
+.page .container .download>a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 15px 32px;
+  border-top-left-radius: 28px;
+  border-bottom-left-radius: 28px;
+  border-top-right-radius: 28px;
+  border-bottom-right-radius: 28px;
+  transition: 0.3s;
+}
+
+.page .container .download>a.ios {
+  background-color: var(--s-cyan);
+  margin-right: 15px;
+  box-shadow: 0 8px 20px 0px hsl(171deg 66% 44% / 50%);
+}
+
+.page .container .download>a.mac {
+  background-color: var(--l-blue);
+  box-shadow: 0 8px 20px 0px hsl(233deg 100% 69% / 50%);
+}
+
+.page .container .download>a.ios:hover {
+  background-color: hsla(171, 66%, 44%, 0.850);
+}
+
+.page .container .download>a.mac:hover {
+  background-color: hsla(233, 100%, 69%, 0.850);
+}
+
+/* End Landing Section */
+/* Start Track Section */
+.page .container .track {
+  margin-top: 150px;
+  margin-bottom: 90%;
+}
+
+.page .container .track .t-text {
+  margin-bottom: 75px;
+}
+
+.page .container .track .t-text>h2 {
+  font-size: 35px;
+  color: var(--d-grayish-blue);
+  margin-bottom: 18px;
+}
+
+.page .container .track .t-text>p {
+  font-size: 19px;
+  color: var(--grayish-blue);
+  line-height: 1.4;
+  width: 760px;
+  margin: 0 auto;
+}
+
+.page .container .track .t-body>img {
+  position: absolute;
+  left: -23%;
+}
+
+.page .container .track .t-body .t-content {
+  width: 350px;
+  position: absolute;
+  right: 120px;
+  top: 29%;
+  text-align: left;
+}
+
+.page .container .track .t-body .t-content .t-row {
+  margin-bottom: 55px;
+}
+
+.page .container .track .t-body .t-content .t-row>h3 {
+  font-size: 22px;
+  color: var(--d-grayish-blue);
+  margin-bottom: 12px;
+}
+
+.page .container .track .t-body .t-content .t-row>p {
+  color: var(--grayish-blue);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* End Track Section */
+/* Start Access Section */
+
+.page .container .access .a-text {
+  margin-bottom: 100px;
+}
+
+.page .container .access .a-text>h2 {
+  color: var(--d-grayish-blue);
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.page .container .access .a-text>p {
+  color: var(--grayish-blue);
+  font-size: 19px;
+  width: 778px;
+  margin: 0 auto;
+}
+
+/* End Access Section */
+/* Start Workflow Section */
+.page .container .workflow {
+  margin-top: 60px;
+}
+
+.page .container .workflow .w-text {
+  margin-bottom: 70px;
+}
+
+.page .container .workflow .w-text>h2 {
+  color: var(--d-grayish-blue);
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.page .container .workflow .w-text>p {
+  color: var(--grayish-blue);
+  font-size: 19px;
+}
+
+.page .container .workflow .w-body {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  width: 1100px;
+  gap: 20px;
+}
+
+.page .container .workflow .w-feature>img {
+  margin-bottom: 40px;
+  height: 44px;
+}
+
+.page .container .workflow .w-feature .w-feat-text>h3 {
+  color: var(--d-grayish-blue);
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.page .container .workflow .w-feature .w-feat-text>p {
+  color: var(--grayish-blue);
+  line-height: 1.8;
+}
+
+/* End Workflow Section */
+/* Start Portfolio Section */
+.page .container .portfolio {
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* End Portfolio Section */
+/* Start Clipboard Section */
+.page .container .clipboard {
+  margin-top: 150px;
+}
+
+.page .container .clipboard .c-text>h2 {
+  color: var(--d-grayish-blue);
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.page .container .clipboard .c-text>p {
+  color: var(--grayish-blue);
+  font-size: 19px;
+  width: 760px;
+  margin: 0 auto;
+}
+
+/* End Clipboard Section */
+/* Start Footer Section */
+.page .footer {
+  position: absolute;
+  bottom: 0;
+  background-color: hsl(201deg 11% 66% / 10%);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 45px 0;
+}
+
+.page .footer>img {
+  width: 60px;
+}
+
+.page .footer .f-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  width: 700px;
+  row-gap: 25px;
+  column-gap: 49px;
+  padding-right: 150px;
+}
+
+.page .footer .f-content>a {
+  color: var(--grayish-blue);
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.page .footer .f-content>a:hover {
+  color: var(--s-cyan);
+}
+
+.page .footer .f-social>img {
+  padding-right: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.page .footer .f-social>img:hover {
+  filter: invert(72%) sepia(13%) saturate(2222%) hue-rotate(120deg) brightness(83%) contrast(87%);
+}
+
+/* End Footer Section */
+
+/* End Desktop Design */
